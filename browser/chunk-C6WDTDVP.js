@@ -1,0 +1,1 @@
+import{Kb as n,Lb as m,ac as c,nb as t}from"./chunk-2J6ZD5TS.js";var p=class e{static \u0275fac=function(o){return new(o||e)};static \u0275cmp=t({type:e,selectors:[["app-mock-form"]],decls:2,vars:0,template:function(o,s){o&1&&(n(0,"p"),c(1,"mock-form works!"),m())},encapsulation:2})};export{p as MockFormComponent};
