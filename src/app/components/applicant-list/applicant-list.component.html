@@ -1,0 +1,42 @@
+  status: 
+
+  <nz-select
+      [nzMaxTagCount]="3"
+      [nzMaxTagPlaceholder]="tagPlaceHolder"
+      nzMode="multiple"
+      nzPlaceHolder="Please select"
+      [(ngModel)]="listOfSelectedValue"
+    >
+      @for (item of listOfOption; track item) {
+        <nz-option [nzLabel]="item" [nzValue]="item"></nz-option>
+      }
+    </nz-select>
+    <ng-template #tagPlaceHolder let-selectedList>and {{ selectedList.length }} more selected</ng-template>
+
+    compétences: 
+
+  <nz-select
+      [nzMaxTagCount]="3"
+      [nzMaxTagPlaceholder]="tagPlaceHolder"
+      nzMode="multiple"
+      nzPlaceHolder="Please select"
+      [(ngModel)]="listOfSelectedValue"
+    >
+      @for (item of listOfOption; track item) {
+        <nz-option [nzLabel]="item" [nzValue]="item"></nz-option>
+      }
+    </nz-select>
+    <ng-template #tagPlaceHolder let-selectedList>and {{ selectedList.length }} more selected</ng-template>
+
+    actif :<nz-switch [ngModel]="switchValue()" (ngModelChange)="switchValue.set($event)"></nz-switch>
+  <br/> 
+  <br/> 
+  <br/>
+ <div class="card-grid">
+  @for (applicantSig of applicants(); track applicantSig.fullName) {
+
+    <app-applicant-card [applicant]="applicantSig"></app-applicant-card>
+
+  }
+</div>
+

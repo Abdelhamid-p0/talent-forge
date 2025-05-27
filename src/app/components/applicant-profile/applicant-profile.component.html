@@ -1,0 +1,17 @@
+<nz-card [nzTitle]="applicant()().fullName" nzBordered="true">
+  <p><strong>ID :</strong> {{ applicant()().id }}</p>
+  <p><strong>Statut :</strong> 
+    <nz-tag [nzColor]="getStatusColor(applicant()().status)">
+      {{ applicant()().status }}
+    </nz-tag>
+  </p>
+  
+  <p><strong>Compétences :</strong></p>
+  <div>
+    <nz-tag *ngFor="let skill of applicant()().skills" [nzColor]="'blue'">{{ skill }}</nz-tag>
+  </div>
+
+  <nz-divider></nz-divider>
+
+  <p><strong>Entretiens réalisés :</strong> {{ applicant()().interviewsDone }}</p>
+</nz-card>

@@ -1,0 +1,14 @@
+    <nz-ribbon [nzText]="status()" [nzColor]="color_status()">
+<nz-card
+    [nzTitle]="applicant.fullName"
+    class="applicant-card"
+  >
+    <p><strong>Compétences :</strong> {{ applicant.skills.join(', ') }}</p>
+    <p><strong>Statut :</strong> {{ applicant.status }}</p>
+    <p><strong>Entretiens faits :</strong> {{ applicant.interviewsDone }}</p>
+    <div class="basic">
+      <nz-float-button (click)="goToProfile()"></nz-float-button>
+    </div>
+</nz-card>
+    </nz-ribbon>
+

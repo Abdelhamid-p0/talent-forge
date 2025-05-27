@@ -1,0 +1,17 @@
+.app-applicant-card {
+  display: block;
+  width: 300px;
+}
+
+.basic {
+        height: 20px;
+        position: relative;
+      }
+      nz-float-button {
+        position: absolute;
+      }
+
+      .applicant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}

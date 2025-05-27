@@ -1,0 +1,14 @@
+nz-select {
+        width: 100%;
+      }
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 24px;
+}
+
+
+
